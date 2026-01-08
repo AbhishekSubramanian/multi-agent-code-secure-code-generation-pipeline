@@ -14,10 +14,10 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-from backend.agents.code_generator import CodeGeneratorAgent
-from backend.agents.syntax_checker import SyntaxCheckerAgent
-from backend.agents.hallucination_detector import HallucinationDetectorAgent
-from backend.agents.code_reviewer import CodeReviewerAgent
+from .agents.code_generator import CodeGeneratorAgent
+from .agents.syntax_checker import SyntaxCheckerAgent
+from .agents.hallucination_detector import HallucinationDetectorAgent
+from .agents.code_reviewer import CodeReviewerAgent
 
 
 class Stage(Enum):

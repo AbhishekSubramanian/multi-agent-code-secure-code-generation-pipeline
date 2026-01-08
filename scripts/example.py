@@ -2,6 +2,11 @@
 Example usage of the Multi-Agent Code Generation System
 """
 
+import sys
+import os
+# Add parent directory to path to allow importing backend module
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from dotenv import load_dotenv
 
 # Load environment variables from .env file

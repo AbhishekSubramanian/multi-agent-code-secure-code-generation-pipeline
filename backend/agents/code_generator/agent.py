@@ -7,6 +7,7 @@ Supports both Claude (Anthropic) and Ollama (local models).
 import re
 from typing import Dict, Any, List
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -48,7 +49,8 @@ class CodeGeneratorAgent:
             self.client_type = "ollama"
 
         # Load agent instructions from CLAUDE.md
-        with open("agents/code_generator/CLAUDE.md", "r", encoding="utf-8") as f:
+        claude_md_path = Path(__file__).parent / "CLAUDE.md"
+        with open(claude_md_path, "r", encoding="utf-8") as f:
             self.system_prompt = f.read()
 
     def generate(self, request_data: Dict[str, Any]) -> Dict[str, Any]:

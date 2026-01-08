@@ -3,6 +3,11 @@ Simple test script to verify the multi-agent system is working correctly.
 This tests individual agents without requiring API calls.
 """
 
+import sys
+import os
+# Add parent directory to path to allow importing backend module
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from backend.agents.syntax_checker import SyntaxCheckerAgent
 from backend.agents.hallucination_detector import HallucinationDetectorAgent
 

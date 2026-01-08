@@ -3,12 +3,19 @@ Flask API Server for Multi-Agent Code Generation System
 Provides REST API endpoints for the React frontend.
 """
 
+import sys
+import os
+# Add parent directory to path if running from backend directory
+if os.path.basename(os.getcwd()) == 'backend':
+    sys.path.insert(0, os.path.dirname(os.getcwd()))
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from backend.orchestrator import Orchestrator
 from dotenv import load_dotenv
-import os
 import logging
+
+# Now import from backend package
+from backend.orchestrator import Orchestrator
 
 # Load environment variables
 load_dotenv()
@@ -124,8 +131,8 @@ def get_examples():
 @app.route('/api/test-agents', methods=['GET'])
 def test_agents():
     """Test individual agents"""
-    from agents.syntax_checker import SyntaxCheckerAgent
-    from agents.hallucination_detector import HallucinationDetectorAgent
+    from backend.agents.syntax_checker.agent import SyntaxCheckerAgent
+    from backend.agents.hallucination_detector.agent import HallucinationDetectorAgent
 
     results = {
         "syntax_checker": {"status": "unknown"},
