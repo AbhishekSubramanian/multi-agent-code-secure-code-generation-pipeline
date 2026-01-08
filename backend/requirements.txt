@@ -1,0 +1,31 @@
+# Multi-Agent Code Generation System - Dependencies
+
+# LLM API Clients
+anthropic>=0.45.0  # For Claude (optional)
+openai>=1.0.0      # For Ollama (OpenAI-compatible API)
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Web API (for UI)
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Python Standard Library (no installation needed, listed for reference)
+# - ast
+# - json
+# - uuid
+# - dataclasses
+# - datetime
+# - typing
+# - enum
+# - re
+# - importlib
+# - inspect
+# - pkgutil
+
+# Development Dependencies (optional)
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
