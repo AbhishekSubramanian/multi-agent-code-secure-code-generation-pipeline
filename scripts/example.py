@@ -1,5 +1,5 @@
 """
-Example usage of the Multi-Agent Code Generation System
+Example usage of AgentLab - Secure Multi-Agent Code Generation System
 """
 
 import sys
@@ -20,7 +20,7 @@ def main():
     """Run example code generation requests"""
 
     print("="*80)
-    print("Multi-Agent Code Generation System - Example")
+    print("AgentLab - Secure Multi-Agent Code Generation System - Example")
     print("="*80)
     print()
 
@@ -81,7 +81,7 @@ def run_single_request():
     """Run a single custom request"""
 
     print("="*80)
-    print("Multi-Agent Code Generation System - Single Request")
+    print("AgentLab - Secure Multi-Agent Code Generation System - Single Request")
     print("="*80)
     print()
 
@@ -206,7 +206,7 @@ def divide(a, b):
 if __name__ == "__main__":
     import sys
 
-    print("Multi-Agent Code Generation System")
+    print("AgentLab - Secure Multi-Agent Code Generation System")
     print()
     print("Choose an option:")
     print("1. Run example requests")

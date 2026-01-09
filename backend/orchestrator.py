@@ -1,5 +1,5 @@
 """
-Multi-Agent Code Generation System - Orchestrator
+AgentLab - Secure Multi-Agent Code Generation System - Orchestrator
 Coordinates workflow between specialized agents for code generation and validation.
 """
 

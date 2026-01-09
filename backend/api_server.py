@@ -1,5 +1,5 @@
 """
-Flask API Server for Multi-Agent Code Generation System
+Flask API Server for AgentLab - Secure Multi-Agent Code Generation System
 Provides REST API endpoints for the React frontend.
 """
 

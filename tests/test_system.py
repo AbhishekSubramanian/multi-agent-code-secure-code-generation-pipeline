@@ -156,7 +156,7 @@ def test_project_structure():
 def main():
     """Run all tests"""
     print("\n" + "="*80)
-    print("Multi-Agent System - Test Suite")
+    print("AgentLab - Secure Multi-Agent System - Test Suite")
     print("="*80 + "\n")
 
     try:
@@ -171,11 +171,11 @@ def main():
         print("="*80)
         print("ALL TESTS PASSED! ✅")
         print("="*80)
-        print("\nThe multi-agent system is ready to use!")
+        print("\nAgentLab is ready to use!")
         print("\nNext steps:")
         print("1. Set up your .env file with ANTHROPIC_API_KEY")
         print("2. Run: python example.py")
-        print("3. Start generating code with the orchestrator!")
+        print("3. Start generating secure code with the orchestrator!")
         print()
 
     except AssertionError as e:

@@ -1,6 +1,6 @@
-# Multi-Agent Code Generation System
+# AgentLab - Secure Multi-Agent Code Generation System
 
-A Claude Code-based multi-agent system for generating, validating, and reviewing Python code.
+A research-focused, secure multi-agent system powered by Claude for generating, validating, and reviewing Python code with comprehensive safety checks.
 
 ## 🏗️ Architecture
 
@@ -232,7 +232,7 @@ User Request: "Create a function to parse JSON files"
          │
          ▼
 ┌─────────────────────┐
-│   Code Generator    │ → Generates Python function
+│   Code Generator    │ → Generates secure Python function
 └─────────────────────┘
          │
          ▼
@@ -247,11 +247,11 @@ User Request: "Create a function to parse JSON files"
          │
          ▼
 ┌─────────────────────┐
-│   Code Reviewer     │ → Reviews for best practices
+│   Code Reviewer     │ → Reviews for security & best practices
 └─────────────────────┘
          │
          ▼
-    Final Output
+    Secure Output
 ```
 
 ## 📋 Agent Communication
